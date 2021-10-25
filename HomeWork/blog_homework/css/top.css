@@ -49,7 +49,7 @@
     margin-left: 150px;
     margin-bottom: 60px;
     width: 800px;
-    height: 300px;
+    height: 400px;
     background: white;
 }
 
@@ -77,6 +77,19 @@
     color: black;
     padding-top: 10px;
     padding-left: 20px;
+}
+
+.page_hr {
+    margin-top: 45px;
+    float: bottom;
+}
+
+.page_data {
+    /*定义段落前空格*/
+    text-indent: 2em;
+    margin-top: 10px;
+    padding-left: 20px;
+
 }
 
 

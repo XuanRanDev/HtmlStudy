@@ -49,7 +49,7 @@
     margin-left: 150px;
     margin-bottom: 60px;
     width: 800px;
-    height: 400px;
+    height: 425px;
     background: white;
 }
 
@@ -90,7 +90,14 @@
     margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+}
 
+
+.page_more {
+    color: darkred;
+    margin-top: 30px;
+    margin-right: 50px;
+    float: right;
 }
 
 

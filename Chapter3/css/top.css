@@ -1,0 +1,31 @@
+.top {
+    margin: 0 auto;
+    width: 1000px;
+    height: auto;
+}
+
+.top_text {
+    text-align: center;
+    font-size: 21px;
+}
+
+.top2 {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.top2_text {
+    text-align: left;
+    font-size: 18px;
+}
+
+.top2_img {
+
+}
+
+
+body {
+    background: #ededed;
+    font-family: "楷体", serif;
+    color: #000000;
+}

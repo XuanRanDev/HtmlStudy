@@ -45,6 +45,7 @@
 }
 
 .page {
+    float: left;
     margin-top: 30px;
     margin-left: 150px;
     margin-bottom: 60px;

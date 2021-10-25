@@ -1,5 +1,13 @@
 .page_mulu {
+    float: right;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 200px;
     width: 300px;
     height: 500px;
-    background: blue;
+    background: white;
+}
+
+.page_all {
+    display: inline-block;
 }

@@ -8,6 +8,18 @@
     background: white;
 }
 
+.page_mulu_touxiang {
+    margin-top: 30px;
+    margin-left: 75px;
+    width: 150px;
+    height: 150px;
+}
+
+.page_mulu_qq {
+    margin-top: 10px;
+    margin-left: 82px;
+}
+
 .page_all {
     display: inline-block;
 }

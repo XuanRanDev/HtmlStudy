@@ -86,7 +86,7 @@
 
         <div class="pic_img" id="pic_background" style="background: url('img/bg.jpeg')  ">
 
-            <p class="pic_img_text" id="AutoType" onclick="ChangeBack()"></p>
+            <p align="center" class="pic_img_text" id="AutoType" onclick="ChangeBack()"></p>
             <script>
                 createSnow();
                 var i = randomNum(1, 3);
@@ -108,7 +108,13 @@
                 function ChangeBack() {
                 }
 
+                var rand = randomNum(1, 3);
                 var str = '我们的目标是星辰和大海';
+                if (rand === 1) {
+                    str = '精于心，简于形。'
+                } else if (rand === 2) {
+                    str = '不想认命，就去拼命。'
+                }
                 var i = 0;
 
                 function typing() {

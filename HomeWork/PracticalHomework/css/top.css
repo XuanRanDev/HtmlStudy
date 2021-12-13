@@ -42,7 +42,7 @@ hr {
 }
 
 .pic_img_text {
-    padding: 260px 200px 0 495px;
+    padding: 260px 0 0 0;
     font-size: 50px;
     color: white;
 }

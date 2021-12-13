@@ -39,6 +39,20 @@
     background: white;
 }
 
+.page_mulu_xx {
+    border: 2px solid #000000;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    background: white;
+}
+
+.page_mulu_xx li {
+    margin-top: 4px;
+    list-style: none;
+}
+
 .page_mulu_fl li {
     margin-top: 4px;
     list-style: none;

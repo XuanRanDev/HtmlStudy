@@ -1,4 +1,6 @@
 .page_mulu {
+    border: 2px solid #000000;
+    border-radius: 20px;
     float: right;
     margin-top: 30px;
     margin-left: 30px;
@@ -17,7 +19,6 @@
 
 .page_mulu_qq {
     margin-top: 10px;
-    margin-left: 82px;
 }
 
 .page_mulu_mulu {

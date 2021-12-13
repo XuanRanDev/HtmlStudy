@@ -47,13 +47,17 @@
 }
 
 .page {
+    box-shadow: 0 0 1px #000 inset;
     float: left;
     margin-top: 30px;
     margin-left: 150px;
     margin-bottom: 60px;
+    border: 2px solid #379082;
+    border-radius: 20px;
     width: 800px;
     height: 425px;
     background: white;
+    /*background: url("../img/div_bg.png");*/
 }
 
 .page_title {

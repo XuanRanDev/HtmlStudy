@@ -1,0 +1,13 @@
+/*
+设置a标签的格式
+ */
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: brown;
+    text-decoration: underline;
+}

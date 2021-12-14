@@ -9,6 +9,7 @@
 }
 
 .info {
+    padding-right: 50px;
     margin-right: 150px;
     float: right;
     display: inline-grid;
@@ -20,7 +21,7 @@
     -moz-opacity: 0.95;
     opacity: 0.95;
     margin-top: 30px;
-    border: 2px solid #000000;
+    border: 2px solid #ffffff;
     border-radius: 20px;
     width: 800px;
     height: 430px;

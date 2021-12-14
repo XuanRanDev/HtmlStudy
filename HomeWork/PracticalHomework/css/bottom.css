@@ -1,0 +1,18 @@
+.copyright {
+    text-align: center;
+    padding-top: 1100px;
+    padding-left: 150px;
+    padding-right: 200px;
+    padding-bottom: 200px;
+    float: bottom;
+}
+
+.youlian {
+    display: inline;
+}
+
+.youlian a {
+    padding-left: 20px;
+    target: window;
+    color: coral;
+}

@@ -61,6 +61,22 @@ code {
 }
 
 
+.PageData_info {
+    border: 2px solid #000000;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    background: white;
+}
+
+.PageData_info ol li {
+
+    margin-left: 10px;
+    line-height: 35px;
+}
+
+
 /*底部友链样式*/
 .copyrightData {
     text-align: center;

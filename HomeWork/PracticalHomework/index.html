@@ -84,24 +84,36 @@
         </div>
 
 
-        <div class="pic_img" id="pic_background" style="background: url('img/bg.jpeg')  ">
+        <div class="pic_img" id="pic_background" style="background: url('img/1.png')  ">
 
             <p align="center" class="pic_img_text" id="AutoType" onclick="ChangeBack()"></p>
             <script>
                 createSnow();
-                var i = randomNum(1, 3);
+                var i = randomNum(1, 6);
                 switch (i) {
                     case 1:
-                        document.getElementById("pic_background").style.background = "url('img/winter2.jpg')";
+                        document.getElementById("pic_background").style.background = "url('img/1.png')";
                         document.getElementById("pic_background").style.backgroundSize = "100% 100%";
                         break;
                     case 2:
-                        document.getElementById("pic_background").style.background = "url('img/spring.jpg')";
+                        document.getElementById("pic_background").style.background = "url('img/2.png')";
                         document.getElementById("pic_background").style.backgroundSize = "100% 100%";
-
                         break;
                     case 3:
-                        document.getElementById("pic_background").style.background = "url('img/bg.jpeg')";
+                        document.getElementById("pic_background").style.background = "url('img/3.png')";
+                        document.getElementById("pic_background").style.backgroundSize = "100% 100%";
+                        break;
+                    case 4:
+                        document.getElementById("pic_background").style.background = "url('img/4.png')";
+                        document.getElementById("pic_background").style.backgroundSize = "100% 100%";
+                        break;
+                    case 5:
+                        document.getElementById("pic_background").style.background = "url('img/5.png')";
+                        document.getElementById("pic_background").style.backgroundSize = "100% 100%";
+                        break;
+                    case 6:
+                        document.getElementById("pic_background").style.background = "url('img/6.png')";
+                        document.getElementById("pic_background").style.backgroundSize = "100% 100%";
                         break;
                 }
 

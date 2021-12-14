@@ -1,5 +1,6 @@
 .Parent {
     display: inline;
+    z-index: 0;
 }
 
 .post {
@@ -82,9 +83,32 @@
     0% {
         opacity: 0;
     }
-    /*初始状态 透明度为0*/
+    10% {
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.3;
+    }
     40% {
-        opacity: 0;
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.9;
     }
     /*过渡状态 透明度为0*/
     100% {
@@ -92,6 +116,46 @@
     }
     /*结束状态 透明度为1*/
 }
+
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.1;
+    }
+    80% {
+        opacity: 0.2;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    60% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    30% {
+        opacity: 0.7;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    10% {
+        opacity: 0.9;
+    }
+    /*过渡状态 透明度为0*/
+    100% {
+        opacity: 0;
+    }
+    /*结束状态 透明度为1*/
+}
+
 
 @-webkit-keyframes fade-in { /*针对webkit内核*/
     0% {

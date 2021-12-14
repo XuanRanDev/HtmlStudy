@@ -148,7 +148,11 @@
                 function typing() {
                     var divTyping = document.getElementById('AutoType');
                     if (i <= str.length) {
-                        divTyping.innerHTML = str.slice(0, i++) + '|';
+                        if (i === str.length) {
+                            divTyping.innerHTML = str.slice(0, i++);
+                        } else {
+                            divTyping.innerHTML = str.slice(0, i++) + '|';
+                        }
                         setTimeout('typing()', 300);//递归调用
                     } else {
                         divTyping.innerHTML = str;//结束打字,移除 _ 光标

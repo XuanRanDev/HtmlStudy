@@ -76,6 +76,13 @@ code {
     line-height: 35px;
 }
 
+.sfixed {
+    position: fixed;
+    top: 1000px;
+    left: 600px;
+    z-index: 100;
+}
+
 
 /*底部友链样式*/
 .copyrightData {

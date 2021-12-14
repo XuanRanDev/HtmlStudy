@@ -15,6 +15,9 @@
         <script src="js/Util.js" type="text/javascript"></script>
         <script src="js/xuehua.js" type="text/javascript"></script>
 
+        <!--代码高亮css-->
+        <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css" rel="stylesheet">
+
         <style>
             .snow {
                 background: white;
@@ -27,6 +30,11 @@
 
     </head>
     <body>
+        <!--代码高亮js-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+        <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
         <script defer="defer" id="fluttering_ribbon" mobile="true" src="js/raddon.js"></script>
 
         <script>
@@ -127,13 +135,48 @@
                             是真的慢，要是放在算法上基本数据还没读完就TLE了，再加上今年参加的是Java的蓝桥杯竞赛，数据读写上可不能掉链子，于是乎，就有了这篇实现Java快速读写的文章。</p>
                         <h4>介绍</h4>
                         <p>在使用之前我先介绍下StreamTokenizer 类：
-
-                            StreamTokenizer 说快但是也并没有比Scanner 快多少（反正没有scanf 快是真的）
-                            在使用时StreamTokenizer 会为每个数据解析为Token，他的nextToken方法用于读取下一个标记。
-                            它的nval字段用于获取具体的数据，返回类型是double所以要进行强转
-                            每次使用nval读入数据之前必须要调用nextToken
-                            sval字段用于读取字符串。</p>
+                        <ul>
+                            <li>StreamTokenizer 说快但是也并没有比Scanner 快多少（反正没有scanf 快是真的）</li>
+                            <li>在使用时StreamTokenizer 会为每个数据解析为Token，他的nextToken方法用于读取下一个标记。</li>
+                            <li>它的nval字段用于获取具体的数据，返回类型是double所以要进行强转</li>
+                            <li>每次使用nval读入数据之前必须要调用nextToken</li>
+                            <li>sval字段用于读取字符串。</li>
+                        </ul>
+                        </p>
                         <h4>模板代码</h4>
+                        <pre>
+                             <code class="lang-java">
+import java.io.*;
+
+/**
+ * Created By XuanRan on 2021/12/3
+ * 快速IO模板
+ */
+public class QuickIO {
+
+    private static StreamTokenizer in = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
+    private static PrintStream out = System.out;
+
+    public static void main(String[] args) throws IOException {
+        String s = next();
+        out.println(s);
+        out.flush();
+        out.close();
+    }
+
+    public static int nextInt() throws IOException {
+        in.nextToken();
+        return (int) in.nval;
+    }
+
+    public static String next() throws IOException {
+        in.nextToken();
+        return in.sval;
+    }
+}
+
+                </code>
+                         </pre>
                     </div>
                     <!--数据头结束-->
                 </div>

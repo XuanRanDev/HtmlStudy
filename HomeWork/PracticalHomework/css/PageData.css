@@ -9,7 +9,7 @@
     border: 2px solid #ffffff;
     border-radius: 20px;
     width: 800px;
-    height: 800px;
+    height: 1200px;
     background: white;
 }
 
@@ -37,6 +37,31 @@
     margin-left: 30px;
     margin-right: 40px;
 }
+
+.PageDataContent_Data li {
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.PageDataContent_Data pre {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.PageDataContent_Data code {
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
 
 
 

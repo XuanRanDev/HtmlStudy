@@ -9,7 +9,7 @@
     border: 2px solid #ffffff;
     border-radius: 20px;
     width: 800px;
-    height: 1200px;
+    height: 2900px;
     background: white;
 }
 
@@ -45,7 +45,7 @@
     margin-right: 40px;
 }
 
-.PageDataContent_Data pre {
+pre {
     border: 2px solid #ffffff;
     border-radius: 20px;
     margin-top: 10px;
@@ -53,12 +53,32 @@
     margin-right: 40px;
 }
 
-.PageDataContent_Data code {
+code {
     border: 2px solid #ffffff;
     border-radius: 10px;
     margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
+
+}
+
+
+/*底部友链样式*/
+.copyrightData {
+    text-align: center;
+    padding-top: 3200px;
+    padding-left: 150px;
+    padding-right: 200px;
+    padding-bottom: 200px;
+    float: bottom;
+}
+
+.youlianData {
+    display: inline;
+}
+
+.youlianData a {
+    padding-left: 20px;
+    target: window;
+    color: coral;
 }
 
 

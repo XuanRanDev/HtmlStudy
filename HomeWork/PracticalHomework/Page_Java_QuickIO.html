@@ -177,6 +177,49 @@ public class QuickIO {
 
                 </code>
                          </pre>
+                        <h4>举例</h4>
+                        <p>共有100000个数字，对它们进行排序为例子，要求在1s内完成排序并输出</p>
+                        <ul>
+                            <li>快速IO方式-<font style="color:red;"><b>时间耗费642ms</b></font></li>
+                            <pre>
+                                <code class="lang-java">import java.io.*;
+import java.util.Arrays;
+
+/**
+ * Created By XuanRan on 2021/12/3
+ */
+public class P1177快速排序 {
+
+    static StreamTokenizer in = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
+    static PrintStream out = System.out;
+    static StringBuilder builder = new StringBuilder();
+
+    public static void main(String[] args) throws Exception {
+        int N = nextInt();
+        int[] arr = new int[N + 100];
+        for (int i = 1; i <= N; i++) {
+            arr[i] = nextInt();
+        }
+        Arrays.sort(arr, 1, N + 1);
+        for (int i = 1; i <= N; i++) {
+            builder.append(arr[i]).append(" ");
+        }
+        out.println(builder.toString());
+    }
+
+    private static int nextInt() throws Exception {
+        in.nextToken();
+        return (int) in.nval;
+    }
+
+    private static String next() throws Exception {
+        in.nextToken();
+        return in.sval;
+    }
+}
+</code>
+                            </pre>
+                        </ul>
                     </div>
                     <!--数据头结束-->
                 </div>
@@ -206,8 +249,8 @@ public class QuickIO {
             <!--统计信息结束，请注意-->
         </div>
 
-        <div class="copyright">
-            <div class="youlian">
+        <div class="copyrightData">
+            <div class="youlianData">
                 <a href="https://blog.xuanran.vip" target="_blank">XuanRan's Blog</a>
                 <a href="https://www.xuanran.vip" target="_blank">XuanRan's Page</a>
                 <a href="https://tc.xuanran.vip" target="_blank">XuanRan's 图床</a>

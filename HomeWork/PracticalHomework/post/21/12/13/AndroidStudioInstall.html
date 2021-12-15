@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Android Studio安装教程 | XuanRan's Blog</title>
+        <link href="../../../../css/top.css" rel="stylesheet" type="text/css">
+        <link href="../../../../css/page_mulu.css" rel="stylesheet" type="text/css">
+        <link href="../../../..//css/page_2.css" rel="stylesheet" type="text/css">
+        <link href="../../../../css/setLabela.css" rel="stylesheet" type="text/css">
+        <link href="../../../../css/PostPage.css" rel="stylesheet" type="text/css">
+        <link href="../../../../css/PageData_AS.css" rel="stylesheet" type="text/css">
+        <link href="../../../../css/bottom.css" rel="stylesheet" type="text/css">
+        <script src=../../../../js/AutoType.js" type="text/javascript"></script>
+        <script src=../../../../js/Util.js" type="text/javascript"></script>
+        <script src=../../../../js/xuehua.js" type="text/javascript"></script>
+
+        <!--代码高亮css-->
+        <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css" rel="stylesheet">
+
+        <style>
+            .snow {
+                background: white;
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <script src="js/Heart.js"></script>
+
+        <script src="js/ScrollListener.js"></script>
+        <!--代码高亮js-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+        <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script defer="defer" id="fluttering_ribbon" mobile="true" src="js/raddon.js"></script>
+
+        <script>
+            //获取屏幕宽高
+            var windowWidth = window.screen.width;
+            var windowHeight = window.screen.height;
+
+            //创建雪花
+            function createSnow() {
+                var left = 0;
+                var top = 0;
+
+                //定义一个初始化随机数,使雪花在屏幕中
+                var left_random = Math.random() * windowWidth;
+                var top_random = Math.random() * windowHeight;
+                var div = document.createElement('div');
+                div.className = 'snow';
+                div.style.transform = 'scale(' + (Math.random()) + ')'
+
+                document.body.appendChild(div);
+
+                //雪花飘落
+                setInterval(function () {
+
+                    div.style.left = left_random + left + 'px';
+                    div.style.top = top_random + top + 'px'
+                    left += 0.2;
+                    top += 0.2;
+
+                    //如果雪花跑到屏幕外面了,让雪花重新返回屏幕顶部
+                    if (left_random + left >= windowWidth) {
+                        left_random = Math.random();
+                        left = 0;
+                    }
+
+                    if (top_random + top >= windowHeight) {
+                        top_random = Math.random();
+                        top = 0;
+                    }
+                }, 5)
+
+            }
+
+            for (var i = 0; i < 200; i++) {
+                createSnow()
+            }
+        </script>
+
+        <div class="top" id="back_top">
+            <a class="top_text" href="../../../../index.html">☰&emsp; XuanRan's Blog</a>
+            <a class="top_text_about" href="../../../../about/index.html">关于</a>
+            <a class="top_text_Admin">后台</a>
+            <a class="top_text_Admin">归档</a>
+            <a class="top_text_Admin">标签</a>
+            <a class="top_text_Admin">主页</a>
+        </div>
+
+
+        <div class="pic_img" id="pic_background" style="background: url('../../../../img/as.png')  ">
+
+            <p align="center" class="pic_img_text" id="AutoType" onclick="ChangeBack()" style="font-size: 60px"></p>
+            <br>
+            <p align="center" style="font-size: 10px;color: white">发表日期：2021/12/13 | 标签：安卓,教程,AS | 分类：教程</p>
+
+            <script>
+                createSnow();
+
+                var str = 'Android Studio安装教程';
+
+                function typing() {
+                    var divTyping = document.getElementById('AutoType');
+                    if (i <= str.length) {
+                        divTyping.innerHTML = str.slice(0, i++) + '|';
+                        setTimeout('typing()', 300);//递归调用
+                    } else {
+                        divTyping.innerHTML = str;//结束打字,移除 _ 光标
+                    }
+                }
+
+                typing();
+            </script>
+            <p class="pic_img_text_right">Created By XuanRan </p>
+        </div>
+
+
+        <!--网页中下部文章和统计共存部分-->
+        <div class="Parent">
+
+            <!--文章部分，每一个文章都是一个div-->
+            <div class="post">
+
+                <div class="PageDateContent">
+
+                    <!--数据头-->
+                    <div class="PageDataContent_Data">
+                        <h4>前言：</h4>
+                        <p>📚 Android Studio作为Google开发的安卓IDE，可谓是比之前的Eclipse强太多了，智能代码导入，Maven依赖管理等等，今天我就带大家搭建AS开发环境</p>
+                        <h4>系统要求</h4>
+                        <p>可以在以下的操作系统开始 Android 应用程序开发：
+                        <ul>
+                            <li>Microsoft® Windows® 8/7/Vista/2003 (32 or 64位)。</li>
+                            <li>Mac® OS X® 10.8.5 或者更高</li>
+                            <li>GNOME or KDE 桌面</li>
+                            <li>Java JDK5 及以后版本</li>
+                            <li>Java 运行时环境6</li>
+                        </ul>
+                        </p>
+                        <h4>概述</h4>
+                        <p>Android Studio 是开发 Android 应用程序的官方 IDE，基于 Intellij IDEA。你可以从官网Android Studio下载下载最新版本的 Android
+                            Studio。如果你是在 Windows 上安装 Android Studio 的新人，找到名为
+                            android-studio-bundle-135.17407740-windows.exe 文件下载，并通过 Android Studio 向导指南运行。
+
+                            如果要在 Mac 或者 Linux 上安装 Android Studio，可以从Android Studio Mac 下载或者Android Studio Linux
+                            下载来下载最新版本，查看随下载文件提供的说明。这个教程假设你在 Windows 8.1 操作系统上安装你的环境。</p>
+                        <h4>安装</h4>
+                        <p>确保在安装 Android Studio 之前，已经安装好 Java JDK。安装 Java JDK，请查看<a href="#">Java 开发环境配置</a>一节。</p>
+                        <img src="../../../../img/AS_Welcome.png">
+                        <p>一旦启动 Android Studio 安装，需要在 Android Studio 安装器中设置 JDK5 或以后版本路径。</p>
+                        <img src="../../../../img/AS_Setup.png">
+                        <p>需要指定本机上的 Android Studio 和 Android SDK 的路径。下图展示了在 windows 8.1 64位架构上的默认安装位置。</p>
+                        <img src="../../../../img/AS_SDK.png">
+                        <p>最后，解压 SDK 软件包到本地机器，这将持续一段时间并占用2626M 的硬盘空间。
+
+                            完成上面的步骤，将看到结束按钮，并可以在欢迎界面中打开 Android Studio 项目，至此，安装已完成。</p>
+
+
+                        <p style="margin-top: 140px;color: red">CopyRight @XuanRan 2018-2021</p>
+                    </div>
+                    <!--数据头结束-->
+                </div>
+
+
+            </div>
+            <!--文章部分结束-->
+
+
+            <!--统计表信息，每一块都是一div-->
+            <div class="info">
+
+                <div class="PageData_info">
+
+                    <h3 style="margin-top: 20px;margin-left: 20px">
+                        目录</h3>
+                    <ol style="margin-top: 5px">
+                        <li>前言</li>
+                        <li>系统要求</li>
+                        <li>概述</li>
+                        <li>安装</li>
+                    </ol>
+
+                </div>
+
+
+            </div>
+            <!--统计信息结束，请注意-->
+        </div>
+
+        <div class="copyrightData">
+            <div class="youlianData">
+                <a href="https://blog.xuanran.vip" target="_blank">XuanRan's Blog</a>
+                <a href="https://www.xuanran.vip" target="_blank">XuanRan's Page</a>
+                <a href="https://tc.xuanran.vip" target="_blank">XuanRan's 图床</a>
+                <a href="http://ds.xuanran.vip" target="_blank">XuanRan's 代刷网</a>
+                <a href="http://test.api.xuanran.vip" target="_blank">XuanRan's API</a>
+            </div>
+            <br>
+            <br>
+            <b style="color: red">
+                <i>
+                    CopyRight@XuanRan 2021
+                </i>
+            </b>
+            <br>
+            <br>
+            <a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2021032317号</a>
+        </div>
+
+
+    </body>
+</html>

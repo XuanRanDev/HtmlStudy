@@ -34,7 +34,7 @@ function createSnow() {
             top_random = Math.random();
             top = 0;
         }
-    }, 10)
+    }, 5)
 
 }
 

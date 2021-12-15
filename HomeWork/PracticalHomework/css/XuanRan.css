@@ -1,11 +1,14 @@
 .Card {
     /*display: inline-grid;*/
     border-radius: 20px;
-    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12), 0 1px 1px 0 rgba(0, 0, 0, .24);
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, .12);
     margin: auto;
     background: coral;
     height: 500px;
     width: 1200px;
+    animation: fade-in; /*动画名称*/
+    animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation: fade-in 1.5s; /*针对webkit内核*/
 }
 
 .pic {
@@ -52,3 +55,47 @@
     color: white;
     margin-left: 20px;
 }
+
+
+/*
+CSS动画效果*/
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    /*过渡状态 透明度为0*/
+    100% {
+        opacity: 1;
+    }
+    /*结束状态 透明度为1*/
+}
+
+

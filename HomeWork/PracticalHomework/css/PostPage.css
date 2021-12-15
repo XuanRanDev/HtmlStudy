@@ -54,6 +54,8 @@
 
 .PageContent_Data p {
     text-indent: 2em;
+    color: #4c4948;
+    line-height: 25px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 30px;

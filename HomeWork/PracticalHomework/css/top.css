@@ -123,5 +123,10 @@ hr {
 
 body {
     background: #ededed;
-    font-family: "小米兰亭", serif;
+    font-family: RuneScapeUF, serif;
+}
+
+@font-face {
+    font-family: RuneScapeUF;
+    src: url(../font/LT.ttf);
 }

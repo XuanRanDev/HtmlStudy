@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Login | XuanRan's Blog</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://code.getmdl.io/1.3.0/material.teal-green.min.css" rel="stylesheet"/>
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/XuanRan.css" rel="stylesheet">
+    </head>
+    <body>
+
+
+        <script defer="defer" id="fluttering_ribbon" mobile="true" src="../js/raddon.js"></script>
+        <script src="../js/Heart.js"></script>
+
+
+        <div class="mdl-layout mdl-js-layout">
+
+            <div class="Card">
+
+                <div class="pic">
+                    <p class="pic_text"></p>
+                </div>
+
+                <div class="login">
+                    <p class="login_text">Login</p>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label" id="username_div">
+                        <input class="mdl-textfield__input" id="username" style="color: white"/>
+                        <label class="mdl-textfield__label" for="username" style="color: white">输入用户名</label>
+                    </div>
+
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label" id="password_div">
+                        <input class="mdl-textfield__input" id="password" style="color: white"/>
+                        <label class="mdl-textfield__label" for="password" style="color: white">输入密码</label>
+                    </div>
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label" id="verity_div">
+
+                        <div style="width: 230px;float:left;">
+                            <input class="mdl-textfield__input" id="verity_div2" style="color: white"/>
+                            <label class="mdl-textfield__label" for="verity_div" style="color: white">输入验证码</label>
+                        </div>
+                        <img src="../img/verity.png" style="height: 30px;width: 60px;float: right;line-height: 20px">
+
+                    </div>
+
+                    <button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;colored mdl-color-text&#45;&#45;white"
+                            id="login-button">
+                        Login
+                    </button>
+
+                    <div class="mdl-card__actions" style="margin-top: 15px;padding-right: 10px">
+                        <button class="mdl-button mdl-js-button mdl-button&#45;&#45;primary">注册</button>
+                        <button class="mdl-button mdl-js-button mdl-button&#45;&#45;primary" id='forgotpassword'>忘记密码
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    </body>
+</html>

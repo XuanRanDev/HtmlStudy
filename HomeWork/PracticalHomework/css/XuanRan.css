@@ -1,0 +1,54 @@
+.Card {
+    /*display: inline-grid;*/
+    border-radius: 20px;
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, .12), 0 1px 1px 0 rgba(0, 0, 0, .24);
+    margin: auto;
+    background: coral;
+    height: 500px;
+    width: 1200px;
+}
+
+.pic {
+    background: url("../img/login_bg.jpg");
+    background-size: 100% 100%;
+    height: 500px;
+    width: 850px;
+    float: left;
+}
+
+.pic_text {
+    margin-top: 220px;
+    text-align: center;
+    line-height: 60px;
+    color: mediumseagreen;
+    font-size: 30px;
+}
+
+.login {
+    float: right;
+    height: 500px;
+    width: 350px;
+}
+
+.login_text {
+    margin-left: 136px;
+    line-height: 50px;
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
+}
+
+#username_div {
+    color: white;
+    margin-left: 20px;
+}
+
+#password_div {
+    color: white;
+    margin-left: 20px;
+}
+
+#verity_div {
+    color: white;
+    margin-left: 20px;
+}
